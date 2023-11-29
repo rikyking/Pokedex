@@ -1,0 +1,142 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-card {
+  border: 3px solid #000;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+}
+
+.pokemon-img {
+  height: 200px;
+  width: 200px;
+}
+
+.div-tot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#pokeNum,
+#btn {
+  margin: 10px;
+}
+
+.p-tag {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.div-abil {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding: 30px;
+}
+.div-abil p {
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-54,
+input[type="number"] {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-align: center;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Stili per dispositivi con larghezza massima di 768px (versione mobile) */
+@media only screen and (max-width: 768px) {
+  /* Stili per il titolo */
+  .title img {
+    width: 80%; /* Ridimensiona l'immagine del titolo */
+    margin: 20px auto; /* Centra l'immagine */
+  }
+
+  /* Stili per la sezione principale */
+  .main {
+    padding: 20px; /* Aggiunge spazio intorno alla sezione principale */
+  }
+
+  /* Stili per l'input */
+  .input {
+    text-align: center; /* Centra l'input e il pulsante */
+  }
+
+  input#pokeNum {
+    width: 80%; /* Ridimensiona l'input */
+    margin-bottom: 10px; /* Aggiunge spazio tra l'input e il pulsante */
+    font-size: 16px; /* Ridimensiona la dimensione del testo dell'input */
+  }
+
+  button#btn {
+    width: 80%; /* Ridimensiona il pulsante */
+    font-size: 18px; /* Ridimensiona la dimensione del testo del pulsante */
+  }
+
+  .div-tot {
+    flex-direction: column;
+  }
+  
+}
+
