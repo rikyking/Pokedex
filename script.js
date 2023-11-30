@@ -115,7 +115,7 @@ function ceckPokeID(id) {
     pokemonCard.classList.add("pokemon-card");
     pokemonCard.innerHTML = `
        <video id="myvideo" controls autoplay>
-          <source src="assets/-.mp4"></source>
+          <source src="assets/sounds/-.mp4"></source>
        </video>`;
     pokemonContainer.appendChild(pokemonCard);
   }
