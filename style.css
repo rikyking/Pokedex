@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: red;
+  background-color: rgb(255, 0, 0);
   font-family: "Roboto", sans-serif;
 }
 
@@ -72,7 +72,9 @@ body {
   font-size: 18px;
   font-weight: bold;
 }
-
+.div-abil h2 {
+  margin: 5px;
+}
 .button-54,
 input[type="number"] {
   font-family: "Open Sans", sans-serif;
@@ -103,7 +105,17 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+#myvideo {
+  height: 600px;
+  width: 470px;
+}
 
 /* Stili per dispositivi con larghezza massima di 768px (versione mobile) */
 @media only screen and (max-width: 768px) {
@@ -137,6 +149,4 @@ input::-webkit-inner-spin-button {
   .div-tot {
     flex-direction: column;
   }
-  
 }
-

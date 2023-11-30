@@ -10,19 +10,42 @@
       href="https://fonts.googleapis.com/css2?family=B612+Mono&family=Lato:ital@1&family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="/assets/icons8-pokedex-96.png">
     <title>Pokèdex</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/icons8-pokedex-96.png"
+    />
   </head>
   <body>
     <div class="title">
       <img src="assets/Pokédex_logo.png" alt="" />
     </div>
     <section class="main">
-      <div id="pokemon-container"></div>
+      <div id="pokemon-container">
+        <div class="start">
+          <h1>Inserisci un numero per trovare un Pokèmon in base alla regione:</h1>
+          <ul
+            style="
+              margin: 10px;
+              list-style-type: none;
+              font-size: 20px;
+              font-weight: 500;
+            "
+          >
+            <li>01 - Kanto: 1 - 151</li>
+            <li>02 - Johto: 152 - 251</li>
+            <li>03 - Hoenn: 256 - 386</li>
+            <li>04 - Sinnoh: 387 - 493</li>
+            <li>05 - Unova: 494 - 649</li>
+            <li>06 - Kalos: 650 - 718</li>
+          </ul>
+        </div>
+      </div>
       <div class="input">
         <input id="pokeNum" type="number" />
         <button id="btn" class="button-54" role="button">
-          Ottieni un Pokemon casuale
+          clicca per cercare il Pokémon
         </button>
       </div>
     </section>
