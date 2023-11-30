@@ -122,6 +122,7 @@ function ceckPokeID(id) {
   return 0;
 }
 
+
 function checkPokeNum(pokeNum) {
   let pokeSound = {
     zeroNum: 0,

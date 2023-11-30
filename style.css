@@ -146,6 +146,7 @@ input::-webkit-inner-spin-button {
     font-size: 18px; /* Ridimensiona la dimensione del testo del pulsante */
   }
 
+  
   .div-tot {
     flex-direction: column;
   }
