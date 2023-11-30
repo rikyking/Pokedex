@@ -65,7 +65,6 @@ async function getRandomPokemon() {
 
   const divAbil = document.createElement("div");
   divAbil.classList.add("div-abil");
-  
 
   const title = document.createElement("h2");
   title.textContent = "Ability";
@@ -122,7 +121,6 @@ function ceckPokeID(id) {
   return 0;
 }
 
-
 function checkPokeNum(pokeNum) {
   let pokeSound = {
     zeroNum: 0,
@@ -160,9 +158,9 @@ function checkPokeNum(pokeNum) {
 document.getElementById("btn").addEventListener("click", getRandomPokemon);
 
 document.addEventListener("DOMContentLoaded", () => {
-  let random = Math.floor(Math.random() * 10000);
+  let random = Math.floor(Math.random() * 100);
   console.log(random);
-  if (random >= 670 && random <= 820) {
+  if (random % 5 == 0) {
     alert("Prova ad inserire in input il seguente numero: 123456789 😎");
   }
 });
