@@ -164,3 +164,28 @@ document.addEventListener("DOMContentLoaded", () => {
     alert("Prova ad inserire in input il seguente numero: 123456789 😎");
   }
 });
+
+document.getElementById("relaod").addEventListener("click",relaod);
+
+function relaod() {
+  console.log("ciao caio");
+  document.getElementById("pokemon-container").innerHTML = `
+  <div class="start">
+  <h1>Inserisci un numero per trovare un Pokèmon in base alla regione:</h1>
+  <ul
+    style="
+      margin: 10px;
+      list-style-type: none;
+      font-size: 20px;
+      font-weight: 500;
+    "
+  >
+    <li>01 - Kanto: 1 - 151</li>
+    <li>02 - Johto: 152 - 251</li>
+    <li>03 - Hoenn: 256 - 386</li>
+    <li>04 - Sinnoh: 387 - 493</li>
+    <li>05 - Unova: 494 - 649</li>
+    <li>06 - Kalos: 650 - 718</li>
+  </ul>
+  `;
+}
