@@ -188,4 +188,5 @@ function relaod() {
     <li>06 - Kalos: 650 - 718</li>
   </ul>
   `;
+  document.getElementById("pokeNum").value = '';
 }
